@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <assert.h>
+int strlen (char *str)
+ {
+	int count = 0;
+	assert( str != NULL );
+	while(*str++!= '\0')
+	{
+		count ++;
+	}
+	return count;
+ }
+ int main()
+ {
+	 int count = 0;
+	 char *str = "abcd";
+	 count = strlen(str);
+	 printf("%d\n",count);
+	 return 0;
+ }
